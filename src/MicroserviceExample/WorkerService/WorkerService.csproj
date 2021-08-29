@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.1.0-rc0002" />
-    <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.1.0-rc0002" />
+    <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.2.0" />
+    <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.2.0" />
     <ProjectReference Include="..\Utils\Utils.csproj" />
   </ItemGroup>
 </Project>

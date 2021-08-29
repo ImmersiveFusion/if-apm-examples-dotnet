@@ -8,10 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="IF.APM.OpenTelemetry.Attributes.AspNetCore.Mvc" Version="1.1.0-rc0002" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.1.0-rc0002" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Loggers.Microsoft.Extensions.Logging" Version="1.1.0-rc0002" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.1.0-rc0002" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Attributes.AspNetCore.Mvc" Version="1.2.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.2.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Loggers.Microsoft.Extensions.Logging" Version="1.2.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.2.0" />
         <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.1.0" />
         <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.1.0" />
         <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.1.0" />
