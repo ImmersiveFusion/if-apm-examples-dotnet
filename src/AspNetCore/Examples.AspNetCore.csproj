@@ -12,10 +12,10 @@
         <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.1.0-rc0002" />
         <PackageReference Include="IF.APM.OpenTelemetry.Loggers.Microsoft.Extensions.Logging" Version="1.1.0-rc0002" />
         <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.1.0-rc0002" />
-        <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.1.0-rc1" />
-        <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.1.0-rc1" />
-        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.1.0-rc1" />
-        <PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.1.0-rc1" />
+        <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.1.0" />
+        <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.1.0" />
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.1.0" />
+        <PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.1.0" />
         <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc6" />
         <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc6" />
         <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc6" />
