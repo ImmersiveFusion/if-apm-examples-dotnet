@@ -49,7 +49,7 @@ namespace Examples.AspNetCore
             {
                 options.ClearProviders();
                 options.AddConsole();
-                options.AddFusion();
+                options.AddImmersiveLogger();
             });
 
             services.AddControllers(options =>
@@ -85,9 +85,9 @@ namespace Examples.AspNetCore
                             jaegerOptions.AgentHost = this.Configuration.GetValue<string>("Jaeger:Host");
                             jaegerOptions.AgentPort = this.Configuration.GetValue<int>("Jaeger:Port");
                         })
-                        .AddFusionExporter(fusionOptions =>
+                        .AddImmersiveExporter(immersiveOptions =>
                         {
-                            fusionOptions.DirectConnection = new DirectConnectionInformation
+                            immersiveOptions.DirectConnection = new DirectConnectionInformation
                             {
                                 Name = "Example.AspNetCore",
                                 Uri = new Uri("amqp://localhost"),
@@ -108,9 +108,9 @@ namespace Examples.AspNetCore
                         {
                             zipkinOptions.Endpoint = new Uri(this.Configuration.GetValue<string>("Zipkin:Endpoint"));
                         })
-                        .AddFusionExporter(fusionOptions =>
+                        .AddImmersiveExporter(immersiveOptions =>
                         {
-                            fusionOptions.DirectConnection = new DirectConnectionInformation
+                            immersiveOptions.DirectConnection = new DirectConnectionInformation
                             {
                                 Name = "Example.AspNetCore",
                                 Uri = new Uri("amqp://localhost"),
@@ -132,9 +132,9 @@ namespace Examples.AspNetCore
                         {
                             otlpOptions.Endpoint = new Uri(this.Configuration.GetValue<string>("Otlp:Endpoint"));
                         })
-                        .AddFusionExporter(fusionOptions =>
+                        .AddImmersiveExporter(immersiveOptions =>
                         {
-                            fusionOptions.DirectConnection = new DirectConnectionInformation
+                            immersiveOptions.DirectConnection = new DirectConnectionInformation
                             {
                                 Name = "Example.AspNetCore",
                                 Uri = new Uri("amqp://localhost"),
@@ -152,9 +152,9 @@ namespace Examples.AspNetCore
                         .AddHttpClientInstrumentation()
                         .AddAspNetCoreMvcAttributeSources()
                         .AddConsoleExporter()
-                        .AddFusionExporter(fusionOptions =>
+                        .AddImmersiveExporter(immersiveOptions =>
                         {
-                            fusionOptions.DirectConnection = new DirectConnectionInformation
+                            immersiveOptions.DirectConnection = new DirectConnectionInformation
                             {
                                 Name = "Example.AspNetCore",
                                 Uri = new Uri("amqp://localhost"),

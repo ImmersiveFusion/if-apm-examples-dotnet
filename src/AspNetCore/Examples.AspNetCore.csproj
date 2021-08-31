@@ -8,10 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="IF.APM.OpenTelemetry.Attributes.AspNetCore.Mvc" Version="1.2.0" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.2.0" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Loggers.Microsoft.Extensions.Logging" Version="1.2.0" />
-        <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.2.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Attributes.AspNetCore.Mvc" Version="1.3.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Direct" Version="1.3.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Loggers.Microsoft.Extensions.Logging" Version="1.3.0" />
+        <PackageReference Include="IF.APM.OpenTelemetry.Rest" Version="1.3.0" />
         <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.1.0" />
         <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.1.0" />
         <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.1.0" />
@@ -19,6 +19,6 @@
         <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc7" />
         <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc7" />
         <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc7" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
     </ItemGroup>
 </Project>

@@ -46,9 +46,9 @@ namespace Examples.AspNet
                      jaegerOptions.AgentHost = "localhost";
                      jaegerOptions.AgentPort = 6831;
                  })
-                 .AddFusionExporter(fusionOptions =>
+                 .AddImmersiveExporter(immersiveOptions =>
                  {
-                     fusionOptions.DirectConnection = new DirectConnectionInformation
+                     immersiveOptions.DirectConnection = new DirectConnectionInformation
                      {
                          Name = "Example.AspNet",
                          Uri = new Uri("amqp://localhost"),

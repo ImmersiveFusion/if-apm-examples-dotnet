@@ -72,9 +72,9 @@ namespace WebApi
                     jaegerOptions.AgentHost = "localhost";
                     jaegerOptions.AgentPort = 6831;
                 })
-                .AddFusionExporter(fusionOptions =>
+                .AddImmersiveExporter(immersiveOptions =>
                 {
-                    fusionOptions.DirectConnection = new DirectConnectionInformation
+                    immersiveOptions.DirectConnection = new DirectConnectionInformation
                     {
                         Name = "Demo.AspNetCore",
                         Uri = new Uri("amqp://localhost"),
